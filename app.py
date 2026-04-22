@@ -24,7 +24,8 @@ DB_CONFIG = {
     'database': os.getenv('DB_NAME', 'htdb'),
     'user': os.getenv('DB_USER', 'ht6user'),
     'password': os.getenv('DB_PASSWORD', 'ht6workflowdbpass'),
-    'port': os.getenv('DB_PORT', '9012')
+    'port': os.getenv('DB_PORT', '9012'),
+    "sslmode": os.getenv("SSL_MODE", "require")
 }
 
 def test_db_connection():
